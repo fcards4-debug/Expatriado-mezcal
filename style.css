@@ -1,16 +1,24 @@
 :root {
-  --cream: #F4EBDD;
-  --paper: #FBF7EE;
-  --obsidian: #1F2A24;
-  --agave: #4F6F52;
-  --terracotta: #B8673C;
-  --old-gold: #B08A45;
-  --talavera: #2F5F73;
-  --charcoal: #2B2B2B;
-  --muted: #6D655D;
-  --line: rgba(31, 42, 36, 0.14);
-  --shadow: 0 24px 60px rgba(31, 42, 36, 0.16);
+  --cream: #F7F0E4;
+  --paper: #FCF7EE;
+
+  --obsidian: #1B1C1A;
+  --agave: #1F4A45;
+
+  --terracotta: #A95638;
+  --old-gold: #B18A45;
+
+  --talavera: #4F7C79;
+
+  --charcoal: #2A2926;
+  --muted: #6F675E;
+
+  --line: rgba(27, 28, 26, 0.14);
+
+  --shadow: 0 24px 60px rgba(27, 28, 26, 0.15);
+
   --radius: 28px;
+
   --font-logo: 'Cinzel', Georgia, serif;
   --font-title: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Montserrat', Arial, sans-serif;
@@ -38,7 +46,14 @@ button, input, textarea { font: inherit; }
 .section-padding { padding: 104px 0; }
 .section-muted { background: var(--paper); }
 .section-dark {
-  background: radial-gradient(circle at top left, rgba(176, 138, 69, 0.20), transparent 38%), var(--obsidian);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(177, 138, 69, 0.22),
+      transparent 38%
+    ),
+    #173D3A;
+
   color: var(--cream);
 }
 
@@ -180,7 +195,7 @@ h3 {
 .intro-band {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: var(--obsidian);
+    background: #173D3A;
   color: var(--cream);
 }
 .intro-band__grid {
@@ -327,7 +342,7 @@ h3 {
 
 .site-footer {
   padding: 42px 0;
-  background: var(--obsidian);
+ background: #173D3A;
   color: rgba(244, 235, 221, 0.78);
 }
 .footer-grid {
