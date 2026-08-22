@@ -407,4 +407,58 @@ h3 {
   .intro-band p { border-right: 0; border-bottom: 1px solid rgba(244,235,221,0.14); }
   .bottle-card__body { min-height: 360px; padding: 22px; }
   .age-gate__card { padding: 26px; }
+  /* =========================================
+   CORRECCIÓN DE IMÁGENES
+   ========================================= */
+
+/* Logo de los catrines */
+.logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-card img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto !important;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* Imagen de la botella */
+.bottle-card__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottle-card__body img {
+  display: block;
+  width: auto !important;
+  max-width: 100%;
+  height: auto !important;
+  max-height: 750px;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* Ajustes para móvil y tablet */
+@media (max-width: 768px) {
+
+  .logo-card img {
+    max-width: 380px;
+  }
+
+  .bottle-card__body img {
+    max-height: 600px;
+  }
+
+}
 }
