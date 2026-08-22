@@ -420,12 +420,9 @@ h3 {
 }
 
 .logo-card img {
-  display: block;
   width: 100%;
-  max-width: 520px;
+  max-width: 500px;
   height: auto !important;
-  object-fit: contain;
-  object-position: center;
 }
 
 
@@ -439,15 +436,10 @@ h3 {
 }
 
 .bottle-card__body img {
-  display: block;
   width: auto !important;
-  max-width: 100%;
+  max-width: 420px;
   height: auto !important;
-  max-height: 750px;
-  object-fit: contain;
-  object-position: center;
 }
-
 
 /* Ajustes para móvil y tablet */
 @media (max-width: 768px) {
