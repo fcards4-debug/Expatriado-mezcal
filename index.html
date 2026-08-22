@@ -1,258 +1,989 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
   <title>EXPATRIADO | Mezcal artesanal de Morelos</title>
-  <meta name="description" content="EXPATRIADO es una propuesta de mezcal artesanal de Morelos creada para acercar la cultura mexicana al mercado europeo." />
-  <meta name="theme-color" content="#1F2A24" />
 
-  <!-- Cambia estos favicons por tu versión final del logo si quieres -->
-  <link rel="icon" type="image/png" sizes="192x192" href="./Logo-v2.jpg" />
-  <link rel="stylesheet" href="./style.css">
+  <meta
+    name="description"
+    content="EXPATRIADO es una propuesta de mezcal artesanal de Morelos creada para acercar la cultura mexicana al mercado europeo."
+  />
 
-  <!-- Tipografías: puedes sustituirlas si decides cambiar el estilo visual -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta
+    name="theme-color"
+    content="#183C3A"
+  />
+
+  <!-- FAVICON -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://fcards4-debug.github.io/Expatriado-mezcal/logo-catrines.png?v=6"
+  />
+
+  <!-- TIPOGRAFÍAS -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="./style.css?v=6"
+  />
 
 </head>
+
 <body>
-  <div class="age-gate" id="ageGate" aria-live="polite">
-    <div class="age-gate__card" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
-      <p class="eyebrow">Consumo responsable</p>
-      <h2 id="ageTitle">Contenido dirigido a mayores de edad</h2>
-      <p>Esta página presenta una marca de bebida alcohólica. Para continuar, confirma que tienes edad legal para consumir alcohol en tu país.</p>
+
+  <!-- ===================================================== -->
+  <!-- CONTROL DE EDAD -->
+  <!-- ===================================================== -->
+
+  <div
+    class="age-gate"
+    id="ageGate"
+    aria-live="polite"
+  >
+
+    <div
+      class="age-gate__card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="ageTitle"
+    >
+
+      <p class="eyebrow">
+        Consumo responsable
+      </p>
+
+      <h2 id="ageTitle">
+        Contenido dirigido a mayores de edad
+      </h2>
+
+      <p>
+        Esta página presenta una marca de bebida alcohólica.
+        Para continuar, confirma que tienes edad legal para
+        consumir alcohol en tu país.
+      </p>
+
       <div class="age-gate__actions">
-        <button class="btn btn--primary" id="acceptAge">Soy mayor de edad</button>
-        <a class="btn btn--ghost" href="https://www.google.com/">Salir</a>
+
+        <button
+          class="btn btn--primary"
+          id="acceptAge"
+          type="button"
+        >
+          Soy mayor de edad
+        </button>
+
+        <a
+          class="btn btn--ghost"
+          href="https://www.google.com/"
+        >
+          Salir
+        </a>
+
       </div>
+
     </div>
+
   </div>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Ir al inicio">
-      <span class="brand__name">EXPATRIADO</span>
-      <span class="brand__tagline">Mezcal artesanal de Morelos</span>
+
+  <!-- ===================================================== -->
+  <!-- CABECERA -->
+  <!-- ===================================================== -->
+
+  <header
+    class="site-header"
+    id="top"
+  >
+
+    <a
+      class="brand"
+      href="#top"
+      aria-label="Ir al inicio"
+    >
+
+      <span class="brand__name">
+        EXPATRIADO
+      </span>
+
+      <span class="brand__tagline">
+        Mezcal artesanal de Morelos
+      </span>
+
     </a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-controls="siteNav" aria-expanded="false">
-      <span></span><span></span><span></span>
+
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Abrir menú"
+      aria-controls="siteNav"
+      aria-expanded="false"
+      type="button"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
 
-    <nav class="site-nav" id="siteNav">
+
+    <nav
+      class="site-nav"
+      id="siteNav"
+    >
+
       <a href="#historia">Historia</a>
+
       <a href="#origen">Origen</a>
+
       <a href="#producto">Producto</a>
+
       <a href="#proceso">Proceso</a>
+
       <a href="#horeca">HORECA</a>
+
       <a href="#contacto">Contacto</a>
+
     </nav>
+
   </header>
 
+
+  <!-- ===================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ===================================================== -->
+
   <main>
+
+
+    <!-- =================================================== -->
+    <!-- HERO / INICIO -->
+    <!-- =================================================== -->
+
     <section class="hero section-padding">
+
       <div class="container hero__grid">
+
+
+        <!-- TEXTO -->
+
         <div class="hero__content reveal">
-          <p class="eyebrow">México cruzando fronteras</p>
-          <h1>Mezcal artesanal de Morelos para Europa.</h1>
-          <p class="hero__lead">EXPATRIADO nace para compartir una parte auténtica de la cultura mexicana mediante un mezcal premium, trazable y elaborado en colaboración con productores artesanales morelenses.</p>
+
+          <p class="eyebrow">
+            México cruzando fronteras
+          </p>
+
+          <h1>
+            Mezcal artesanal de Morelos para Europa.
+          </h1>
+
+          <p class="hero__lead">
+            EXPATRIADO nace para compartir una parte auténtica
+            de la cultura mexicana mediante un mezcal premium,
+            trazable y elaborado en colaboración con productores
+            artesanales morelenses.
+          </p>
+
+
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contacto">Contacto profesional</a>
-            <a class="btn btn--secondary" href="#producto">Conocer el mezcal</a>
+
+            <a
+              class="btn btn--primary"
+              href="#contacto"
+            >
+              Contacto profesional
+            </a>
+
+            <a
+              class="btn btn--secondary"
+              href="#producto"
+            >
+              Conocer el mezcal
+            </a>
+
           </div>
-          <div class="hero__meta" aria-label="Atributos principales">
-            <span>100% agave espadín</span>
-            <span>700 ml</span>
-            <span>Origen Morelos</span>
+
+
+          <div
+            class="hero__meta"
+            aria-label="Atributos principales"
+          >
+
+            <span>
+              100% agave espadín
+            </span>
+
+            <span>
+              700 ml
+            </span>
+
+            <span>
+              Origen Morelos
+            </span>
+
           </div>
+
         </div>
+
+
+        <!-- LOGO DE CATRINES -->
 
         <div class="hero__visual reveal reveal--delay">
-  <div class="logo-card">
-    <img
-      src="./logo-catrines-v2.png?v=1"
-      alt="Logo EXPATRIADO con dos catrines brindando"
-    />
-  </div>
-</div>
-    </section>
 
-    <section class="intro-band" aria-label="Posicionamiento de marca">
-      <div class="container intro-band__grid">
-        <p>Premium accesible</p>
-        <p>Artesanal</p>
-        <p>Origen Morelos</p>
-        <p>Canal HORECA</p>
-      </div>
-    </section>
+          <div class="logo-card">
 
-    <section class="section-padding" id="historia">
-      <div class="container split">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Nuestra historia</p>
-          <h2>Un nombre que explica el viaje.</h2>
-        </div>
-        <div class="copy reveal reveal--delay">
-          <p>EXPATRIADO representa la experiencia de vivir fuera del país de origen y mantener un vínculo profundo con la cultura propia. La marca surge de la historia de un mexicano en Europa que identifica el interés del consumidor europeo por México y decide traer una expresión auténtica de su tierra: el mezcal artesanal.</p>
-          <p>El nombre simboliza también el recorrido del producto: un destilado nacido en Morelos que cruza fronteras para convertirse en una experiencia cultural, gastronómica y sensorial en Europa.</p>
-        </div>
-      </div>
-    </section>
+            <img
+              src="https://fcards4-debug.github.io/Expatriado-mezcal/logo-catrines.png?v=6"
+              alt="Logo de EXPATRIADO con dos catrines brindando"
+              width="1000"
+              height="1000"
+              decoding="async"
+            />
 
-    <section class="section-padding section-muted" id="origen">
-      <div class="container origin-grid">
-        <div class="origin-card reveal">
-          <p class="eyebrow">Origen</p>
-          <h2>Morelos, una identidad mezcalera emergente.</h2>
-          <p>El proyecto se apoya en la colaboración con Destilería Xonesco, ubicada en Palpan de Baranda, Morelos. Su proceso artesanal y su vínculo con el territorio permiten construir una propuesta diferenciada frente a marcas procedentes de regiones más saturadas en el mercado internacional.</p>
-        </div>
-        <div class="origin-points reveal reveal--delay">
-          <article>
-            <span>01</span>
-            <h3>Territorio</h3>
-            <p>Palpan de Baranda, Miacatlán, Morelos.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Productor</h3>
-            <p>Colaboración directa con una destilería artesanal.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Relato</h3>
-            <p>Origen verificable, proceso tradicional y trazabilidad.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding" id="producto">
-      <div class="container product-grid">
-        <div class="bottle-card reveal" aria-label="Concepto visual de botella">
-          <div class="bottle-card__neck"></div>
-          <div class="bottle-card__body">
-            <img src="./Expatriado-botella.jpg" alt="Botella EXPATRIADO Mezcal Artesanal de Morelos" />
           </div>
-          <p class="bottle-card__caption">Concepto visual provisional</p>
+
         </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================== -->
+    <!-- POSICIONAMIENTO -->
+    <!-- =================================================== -->
+
+    <section
+      class="intro-band"
+      aria-label="Posicionamiento de marca"
+    >
+
+      <div class="container intro-band__grid">
+
+        <p>
+          Premium accesible
+        </p>
+
+        <p>
+          Artesanal
+        </p>
+
+        <p>
+          Origen Morelos
+        </p>
+
+        <p>
+          Canal HORECA
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================== -->
+    <!-- HISTORIA -->
+    <!-- =================================================== -->
+
+    <section
+      class="section-padding"
+      id="historia"
+    >
+
+      <div class="container split">
+
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            Nuestra historia
+          </p>
+
+          <h2>
+            Un nombre que explica el viaje.
+          </h2>
+
+        </div>
+
+
+        <div class="copy reveal reveal--delay">
+
+          <p>
+            EXPATRIADO representa la experiencia de vivir fuera
+            del país de origen y mantener un vínculo profundo
+            con la cultura propia.
+          </p>
+
+          <p>
+            La marca surge de la historia de un mexicano en
+            Europa que identifica el interés del consumidor
+            europeo por México y decide traer una expresión
+            auténtica de su tierra: el mezcal artesanal.
+          </p>
+
+          <p>
+            El nombre simboliza también el recorrido del
+            producto: un destilado nacido en Morelos que cruza
+            fronteras para convertirse en una experiencia
+            cultural, gastronómica y sensorial en Europa.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================== -->
+    <!-- ORIGEN -->
+    <!-- =================================================== -->
+
+    <section
+      class="section-padding section-muted"
+      id="origen"
+    >
+
+      <div class="container origin-grid">
+
+
+        <div class="origin-card reveal">
+
+          <p class="eyebrow">
+            Origen
+          </p>
+
+          <h2>
+            Morelos, una identidad mezcalera emergente.
+          </h2>
+
+          <p>
+            El proyecto se apoya en la colaboración con
+            Destilería Xonesco, ubicada en Palpan de Baranda,
+            Morelos.
+          </p>
+
+          <p>
+            Su proceso artesanal y su vínculo con el territorio
+            permiten construir una propuesta diferenciada frente
+            a marcas procedentes de regiones con una presencia
+            internacional más consolidada.
+          </p>
+
+        </div>
+
+
+        <div class="origin-points reveal reveal--delay">
+
+
+          <article>
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Territorio
+            </h3>
+
+            <p>
+              Palpan de Baranda, Miacatlán, Morelos.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Productor
+            </h3>
+
+            <p>
+              Colaboración directa con una destilería artesanal.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Relato
+            </h3>
+
+            <p>
+              Origen verificable, proceso tradicional y
+              trazabilidad.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================== -->
+    <!-- PRODUCTO -->
+    <!-- =================================================== -->
+
+    <section
+      class="section-padding"
+      id="producto"
+    >
+
+      <div class="container product-grid">
+
+
+        <!-- BOTELLA -->
+
+        <div
+          class="bottle-card reveal"
+          aria-label="Concepto visual de botella EXPATRIADO"
+        >
+
+          <div class="bottle-card__body">
+
+            <img
+              src="https://fcards4-debug.github.io/Expatriado-mezcal/Expatriado-botella.jpg?v=6"
+              alt="Botella EXPATRIADO Mezcal Artesanal de Morelos"
+              width="1024"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+            />
+
+          </div>
+
+
+          <p class="bottle-card__caption">
+            Concepto visual provisional
+          </p>
+
+        </div>
+
+
+        <!-- INFORMACIÓN PRODUCTO -->
 
         <div class="product-copy reveal reveal--delay">
-          <p class="eyebrow">Producto</p>
-          <h2>Mezcal joven, artesanal y diseñado para el canal premium.</h2>
-          <p>La propuesta inicial se plantea en formato de 700 ml, con botella prefabricada premium para reducir inversión inicial y evitar el coste de un molde propio en la fase piloto.</p>
+
+          <p class="eyebrow">
+            Producto
+          </p>
+
+          <h2>
+            Mezcal joven, artesanal y diseñado para el canal
+            premium.
+          </h2>
+
+          <p>
+            La propuesta inicial se plantea en formato de
+            700 ml, con botella prefabricada premium para
+            reducir la inversión inicial y evitar el coste
+            de desarrollar un molde propio durante la fase
+            piloto.
+          </p>
+
 
           <div class="specs">
-            <div><span>Categoría</span><strong>Mezcal artesanal joven</strong></div>
-            <div><span>Agave</span><strong>Espadín</strong></div>
-            <div><span>Origen</span><strong>Morelos, México</strong></div>
-            <div><span>Formato</span><strong>700 ml</strong></div>
-            <div><span>ABV</span><strong>Pendiente de validación</strong></div>
-            <div><span>Canal</span><strong>HORECA y retail especializado</strong></div>
+
+
+            <div>
+
+              <span>
+                Categoría
+              </span>
+
+              <strong>
+                Mezcal artesanal joven
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                Agave
+              </span>
+
+              <strong>
+                Espadín
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                Origen
+              </span>
+
+              <strong>
+                Morelos, México
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                Formato
+              </span>
+
+              <strong>
+                700 ml
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                ABV
+              </span>
+
+              <strong>
+                Pendiente de validación definitiva
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                Canal
+              </span>
+
+              <strong>
+                HORECA y retail especializado
+              </strong>
+
+            </div>
+
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section-padding section-dark" id="proceso">
+
+    <!-- =================================================== -->
+    <!-- PROCESO -->
+    <!-- =================================================== -->
+
+    <section
+      class="section-padding section-dark"
+      id="proceso"
+    >
+
       <div class="container">
-        <div class="section-heading section-heading--center reveal">
-          <p class="eyebrow">Proceso artesanal</p>
-          <h2>De la tierra a la copa.</h2>
-          <p>Un recorrido productivo que conserva la esencia del mezcal: agave, fuego, fermentación natural y doble destilación.</p>
+
+
+        <div
+          class="section-heading section-heading--center reveal"
+        >
+
+          <p class="eyebrow">
+            Proceso artesanal
+          </p>
+
+          <h2>
+            De la tierra a la copa.
+          </h2>
+
+          <p>
+            Un recorrido productivo que conserva la esencia
+            del mezcal: agave, fuego, fermentación natural
+            y doble destilación.
+          </p>
+
         </div>
+
 
         <div class="process-grid reveal reveal--delay">
+
+
           <article>
-            <span>01</span>
-            <h3>Corte</h3>
-            <p>Selección del maguey espadín en su punto de madurez.</p>
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Corte
+            </h3>
+
+            <p>
+              Selección del maguey espadín en su punto de
+              madurez.
+            </p>
+
           </article>
+
+
           <article>
-            <span>02</span>
-            <h3>Cocción</h3>
-            <p>Cocción del agave en horno tradicional trunco cónico.</p>
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Cocción
+            </h3>
+
+            <p>
+              Cocción del agave en horno tradicional
+              trunco cónico.
+            </p>
+
           </article>
+
+
           <article>
-            <span>03</span>
-            <h3>Molienda</h3>
-            <p>Desfibrado del agave cocido para liberar azúcares.</p>
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Molienda
+            </h3>
+
+            <p>
+              Desfibrado del agave cocido para liberar
+              azúcares.
+            </p>
+
           </article>
+
+
           <article>
-            <span>04</span>
-            <h3>Fermentación</h3>
-            <p>Fermentación natural sin levaduras añadidas ni aceleradores.</p>
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Fermentación
+            </h3>
+
+            <p>
+              Fermentación natural sin levaduras añadidas
+              ni aceleradores.
+            </p>
+
           </article>
+
+
           <article>
-            <span>05</span>
-            <h3>Destilación</h3>
-            <p>Doble destilación y cortes supervisados por el maestro mezcalero.</p>
+
+            <span>
+              05
+            </span>
+
+            <h3>
+              Destilación
+            </h3>
+
+            <p>
+              Doble destilación y cortes supervisados
+              por el maestro mezcalero.
+            </p>
+
           </article>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section-padding" id="horeca">
+
+    <!-- =================================================== -->
+    <!-- HORECA -->
+    <!-- =================================================== -->
+
+    <section
+      class="section-padding"
+      id="horeca"
+    >
+
       <div class="container horeca-grid">
+
+
         <div class="section-heading reveal">
-          <p class="eyebrow">Canal profesional</p>
-          <h2>Una propuesta creada para bares, restaurantes y coctelería.</h2>
+
+          <p class="eyebrow">
+            Canal profesional
+          </p>
+
+          <h2>
+            Una propuesta creada para bares, restaurantes
+            y coctelería.
+          </h2>
+
         </div>
+
+
         <div class="copy reveal reveal--delay">
-          <p>EXPATRIADO se orienta inicialmente al canal HORECA premium: restaurantes mexicanos contemporáneos, coctelerías, hoteles boutique, vinotecas, tiendas gourmet y distribuidores especializados.</p>
-          <p>La marca no busca competir por volumen en gran distribución, sino construir valor mediante prescripción, catas, formación y una experiencia de consumo coherente con su origen artesanal.</p>
-          <a class="btn btn--primary" href="#contacto">Solicitar información profesional</a>
+
+          <p>
+            EXPATRIADO se orienta inicialmente al canal
+            HORECA premium: restaurantes mexicanos
+            contemporáneos, coctelerías, hoteles boutique,
+            vinotecas, tiendas gourmet y distribuidores
+            especializados.
+          </p>
+
+          <p>
+            La marca no busca competir por volumen en gran
+            distribución, sino construir valor mediante
+            prescripción, catas, formación y una experiencia
+            de consumo coherente con su origen artesanal.
+          </p>
+
+          <a
+            class="btn btn--primary"
+            href="#contacto"
+          >
+            Solicitar información profesional
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section-padding section-muted" id="contacto">
+
+    <!-- =================================================== -->
+    <!-- CONTACTO -->
+    <!-- =================================================== -->
+
+    <section
+      class="section-padding section-muted"
+      id="contacto"
+    >
+
       <div class="container contact-grid">
+
+
         <div class="contact-card reveal">
-          <p class="eyebrow">Contacto</p>
-          <h2>¿Quieres conocer EXPATRIADO?</h2>
-          <p>Web provisional de presentación. Producto en fase de desarrollo y validación para el mercado español.</p>
+
+          <p class="eyebrow">
+            Contacto
+          </p>
+
+          <h2>
+            ¿Quieres conocer EXPATRIADO?
+          </h2>
+
+          <p>
+            Web provisional de presentación.
+            Producto en fase de desarrollo y validación
+            para el mercado español.
+          </p>
+
+
           <div class="contact-actions">
-            <!-- CAMBIAR: sustituye este correo por el correo real de la marca -->
-            <a class="btn btn--primary" href="mailto:contacto@expatriadomezcal.com?subject=Contacto%20profesional%20EXPATRIADO">Enviar email</a>
-            <button class="btn btn--secondary" id="copyEmail" type="button" data-email="contacto@expatriadomezcal.com">Copiar email</button>
+
+            <a
+              class="btn btn--primary"
+              href="mailto:contacto@expatriadomezcal.com?subject=Contacto%20profesional%20EXPATRIADO"
+            >
+              Enviar email
+            </a>
+
+
+            <button
+              class="btn btn--secondary"
+              id="copyEmail"
+              type="button"
+              data-email="contacto@expatriadomezcal.com"
+            >
+              Copiar email
+            </button>
+
           </div>
-          <p class="small-text" id="copyStatus" aria-live="polite"></p>
+
+
+          <p
+            class="small-text"
+            id="copyStatus"
+            aria-live="polite"
+          >
+          </p>
+
         </div>
+
 
         <div class="newsletter-card reveal reveal--delay">
-          <h3>Contacto HORECA</h3>
-          <p>Para restaurantes, coctelerías, distribuidores o tiendas especializadas.</p>
-          <!-- GitHub Pages no procesa formularios. Conecta este formulario a Google Forms, Formspree o Netlify Forms si lo necesitas. -->
-          <form class="contact-form" action="mailto:contacto@expatriadomezcal.com" method="post" enctype="text/plain">
-            <label for="name">Nombre</label>
-            <input id="name" name="nombre" type="text" placeholder="Tu nombre" />
 
-            <label for="business">Empresa / local</label>
-            <input id="business" name="empresa" type="text" placeholder="Restaurante, bar, tienda..." />
+          <h3>
+            Contacto HORECA
+          </h3>
 
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+          <p>
+            Para restaurantes, coctelerías,
+            distribuidores o tiendas especializadas.
+          </p>
 
-            <button class="btn btn--primary" type="submit">Enviar consulta</button>
+
+          <form
+            class="contact-form"
+            action="mailto:contacto@expatriadomezcal.com"
+            method="post"
+            enctype="text/plain"
+          >
+
+
+            <label for="name">
+              Nombre
+            </label>
+
+            <input
+              id="name"
+              name="nombre"
+              type="text"
+              placeholder="Tu nombre"
+            />
+
+
+            <label for="business">
+              Empresa / local
+            </label>
+
+            <input
+              id="business"
+              name="empresa"
+              type="text"
+              placeholder="Restaurante, bar, tienda..."
+            />
+
+
+            <label for="message">
+              Mensaje
+            </label>
+
+            <textarea
+              id="message"
+              name="mensaje"
+              rows="4"
+              placeholder="Cuéntanos qué necesitas"
+            ></textarea>
+
+
+            <button
+              class="btn btn--primary"
+              type="submit"
+            >
+              Enviar consulta
+            </button>
+
+
           </form>
+
         </div>
+
       </div>
+
     </section>
+
+
   </main>
 
+
+  <!-- ===================================================== -->
+  <!-- FOOTER -->
+  <!-- ===================================================== -->
+
   <footer class="site-footer">
+
     <div class="container footer-grid">
+
+
       <div>
-        <p class="footer-brand">EXPATRIADO</p>
-        <p>Mezcal artesanal de Morelos.</p>
+
+        <p class="footer-brand">
+          EXPATRIADO
+        </p>
+
+        <p>
+          Mezcal artesanal de Morelos.
+        </p>
+
       </div>
+
+
       <div>
-        <p><strong>Aviso:</strong> contenido dirigido exclusivamente a mayores de edad. Consumo responsable. Esta web es un prototipo informativo y no realiza venta online.</p>
+
+        <p>
+          <strong>Aviso:</strong>
+          contenido dirigido exclusivamente a mayores
+          de edad. Consumo responsable. Esta web es
+          un prototipo informativo y no realiza venta
+          online.
+        </p>
+
       </div>
+
+
     </div>
+
   </footer>
 
-  <script src="script.js"></script>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="./script.js?v=6"></script>
+
+
 </body>
+
 </html>
